@@ -29,13 +29,24 @@ nav a{
 nav a:hover{
     background-color: #555;
 }
+    /* cocial menu base styles*/
+    a.tw{
+
+        
+    }
+
     /* flex styles */
 @media screen and (min-width: 768px){
     nav ul{
         display: flex;
-        justify-content: flex-start;
+        //justify-content: flex-start;
     }
     nav li{
        flex: 1 1 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+
     }
 }
