@@ -17,21 +17,22 @@ body{
 }
 .box{
     height: 100px;
-    min-width: 200px;
     flex-grow: 1;
+    
     
 }
 .one{
     background: blue;
-    
+    flex-basis: 100px;
 }
 .two{
     background: pink;
-    
+    flex-basis: 200px;
     
 }
 .three{
     background: brown;
+    flex-basis: 300px;
     
     
 }
