@@ -10,31 +10,32 @@ body{
     max-width: 960px;
     margin: 0 auto;
 }
-.flex-container{
-    display: flex;
-    background: #fff;
-    flex-wrap: wrap;
+    /* menu base styles */
+nav{
+    background: #333;
 }
-.box{
-    height: 100px;
-    //min-width: 500px;
-    //flex-basis: 500px;
-    flex: 1 0 200px;
-    
-    
+nav ul{
+    list-style-type: none;
+    padding: 0;
 }
-.one{
-    background: blue;
-    
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+   // background-color: #777;
 }
-.two{
-    background: pink;
-    
-    
+nav a:hover{
+    background-color: #555;
 }
-.three{
-    background: brown;
-    
-    
-    
+    /* flex styles */
+@media screen and (min-width: 768px){
+    nav ul{
+        display: flex;
+        justify-content: flex-start;
+    }
+    nav li{
+       flex: 1 1 0;
+    }
 }
